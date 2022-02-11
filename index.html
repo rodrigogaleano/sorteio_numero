@@ -4,22 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sorteio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sorteio de número</title>
 </head>
 
 <body>
-    <h1>Sortear número</h1>
-    <p>Informe o valor mínimo</p>
-    <input type="number" id="minimo">
-    <p>Informe o valor máximo</p>
-    <input type="number" id="maximo">
 
-    <br>
-    <button onclick="sortear()">Sortear</button>
 
-    <br>
+    <div class="container">
+        <div class="content">
+            <h1>Sortear número aleatório</h1>
+            <input type="number" id="minimo" placeholder="Valor mínimo">
+            <input type="number" id="maximo" placeholder="Valor máximo">
+            <div id="resultado"></div>
+            <button class="btn" onclick="sortear()">Sortear</button>
 
-    <p id="resultado">Resultado: </p>
+        </div>
+        <footer>
+            <ul class="socialmedia">
+                <li><a href="https://www.linkedin.com/in/rodrigogaleano/" target="_blank"><img
+                            src="./img/socialmedia/linkedin.png"></a></li>
+                <li><a href="https://github.com/rodrigogaleano" target="_blank"><img
+                            src="./img/socialmedia/github.png"></a>
+                </li>
+                <li><a href="https://www.instagram.com/rodrigo1galeano/" target="_blank"><img
+                            src="./img/socialmedia/instagram.png"></a></li>
+            </ul>
+        </footer>
+    </div>
+
     <script src="script.js"></script>
 </body>
 

@@ -1,0 +1,123 @@
+@keyframes botao {
+    from {transform: scale(1);}
+    to  {transform: scale(1.03);}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EEEEEE;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.content{
+    width: 500px;
+    box-shadow:#0C7B93 0px 0px 0px 4px;
+    background-color: #142850;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 48px;
+    padding: 20px;
+}
+
+input{
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 50%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #EEEEEE;
+	background: transparent;
+	margin-bottom: 10px;
+	height: 45px;
+    color: #00A8CC;
+    font-size: 24px;
+    text-align: center;
+}
+
+input::placeholder{
+    color: rgba(238, 238, 238, 0.5);
+}
+
+.btn{
+    background-color: #27496D;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    cursor: pointer;
+    color: #EEEEEE;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 16px;
+    text-transform: uppercase;
+    transform: translateZ(0);
+    transition: filter .2s;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.btn:after {
+    background-clip: padding-box;
+    background-color: #0C7B93;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.btn:hover{
+    animation-name: botao;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+#resultado{
+    padding: 15px;
+    font-size: 48px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.socialmedia li{
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.socialmedia img{
+    height: 24px;
+}
