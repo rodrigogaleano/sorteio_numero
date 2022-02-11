@@ -121,3 +121,24 @@ footer{
 .socialmedia img{
     height: 24px;
 }
+
+@media (max-width: 550px){
+  .content{
+    width: 400px;
+  }
+  input{
+    width: 70%;
+  }
+}
+
+@media (max-width: 450px){
+    .content{
+      width: 300px;
+    }
+  }
+
+  @media (max-width: 310px){
+    .content{
+      width: 250px;
+    }
+  }
